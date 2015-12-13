@@ -20,7 +20,7 @@
 
 <hr>
 <div class='col-md-12'>
-		<%= form_for [@article, @comment], :html => {class: "form-horizontal", role: "form"} do |f| %>
+		<%= form_for([@article, @comment], :html => {class: "form-horizontal", role: "form"}) do |f| %>
 		
 		<% if @article.errors.any? %>
 			<div class="panel panel-danger col-md-offset-1">
@@ -61,7 +61,6 @@
 		<% end %>
 		
 	</div>
-
 
 <div class="col-md-12">
 	<header>
